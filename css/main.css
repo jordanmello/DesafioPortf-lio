@@ -1,0 +1,598 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0px;
+    text-decoration: none;
+}
+
+body {
+    margin: 0px 10%;
+    width: 1440px;
+    height: 1767px;
+    background: #22212C;
+    display: grid;
+    grid-template-areas:
+        "header main"
+        "header postss"
+        "header footer"
+        "header footer"
+        "header footer";
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+
+header {
+    grid-area: header;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    justify-content: space-around;
+    align-items: center;
+}
+
+main {
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.postss {
+    grid-area: postss;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.conteudo3 {
+    grid-area: footer;
+}
+
+.profile {
+    width: 85%;
+    height: 16%;
+    background: #302F3D;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.profile_pic {
+    width: 30%;
+    height: 50%;
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 100%;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+    border: 2px solid green;
+    padding: 10px;
+}
+
+h2 {
+    font-family: 'Merriweather Sans';
+    font-style: normal;
+    font-weight: 700;
+    color: #837E9F;
+}
+
+.profile h4 {
+    padding-top: 10px;
+    font-family: 'Merriweather Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    color: #837E9F;
+}
+
+.links {
+    width: 85%;
+    height: 18%;
+    background: #302F3D;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+    align-items: center;
+}
+
+.links_texto a {
+    font-family: 'Merriweather Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    color: #837E9F;
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+    align-items: center;
+    padding: 7px;
+    margin-left: 40px;
+}
+
+.local::before,
+.job::before,
+.github::before,
+.linkedin::before,
+.twitter::before,
+.site::before,
+.email::before {
+    content: '';
+    width: 17px;
+    height: 24px;
+    background-repeat: no-repeat;
+    padding-left: 40px;
+
+}
+
+.local::before {
+    background-image: url(../img/map-pin.svg);
+}
+
+.job::before {
+    background-image: url(../img/briefcase.svg);
+}
+
+.github::before {
+    background-image: url(../img/github.svg);
+}
+
+.linkedin::before {
+    background-image: url(../img/linkedin.svg);
+}
+
+.twitter::before {
+    background-image: url(../img/twitter.svg);
+}
+
+.site::before {
+    background-image: url(../img/globe.svg);
+}
+
+.email::before {
+    background-image: url(../img/mail.svg);
+}
+
+.technologies {
+    width: 85%;
+    height: 18%;
+    background: #302F3D;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: space-around;
+    justify-content: flex-start;
+}
+
+.technologies h3 {
+    font-family: 'Merriweather Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    color: #837E9F;
+    padding-left: 20px;
+}
+
+.technologies_icones {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: space-around;
+    justify-content: center;
+    gap: 25px;
+}
+
+.technologies_icones_js,
+.technologies_icones_rjs,
+.technologies_icones_njs,
+.technologies_icones_git,
+.technologies_icones_ghub,
+.technologies_icones_html,
+.technologies_icones_css,
+.technologies_icones_elixir,
+.technologies_icones_rnat p {
+    font-family: 'Merriweather Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+    padding-top: 10px;
+}
+
+.technologies_icones_js,
+.technologies_icones_rjs,
+.technologies_icones_njs,
+.technologies_icones_git,
+.technologies_icones_ghub,
+.technologies_icones_html,
+.technologies_icones_css,
+.technologies_icones_elixir,
+.technologies_icones_rnat {
+    width: 100px;
+    height: 35px;
+    left: 272px;
+    top: 894px;
+    background: #CB92B1;
+    border-radius: 30px;
+}
+
+.experiences {
+    width: 85%;
+    height: 18%;
+    background: #302F3D;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.experiences h3 {
+    font-family: 'Merriweather Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    color: #837E9F;
+    padding-left: 20px;
+}
+
+.experiences ul {
+    color: #837E9F;
+    display: flex;
+    padding-left: 60px;
+    gap: 10px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.experiences ul li p {
+    font-family: 'Merriweather Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    color: #837E9F;
+}
+
+.education {
+    width: 85%;
+    height: 18%;
+    background: #302F3D;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.education h3 {
+    font-family: 'Merriweather Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    color: #837E9F;
+    padding-left: 20px;
+}
+
+.education ul {
+    color: #837E9F;
+    display: flex;
+    padding-left: 60px;
+    gap: 10px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.education ul li p {
+    font-family: 'Merriweather Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    color: #837E9F;
+}
+
+.my_projects {
+    width: 85%;
+    height: 86px;
+    background: #302F3D;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 50px;
+}
+
+.my_projects h3 {
+    font-family: 'Merriweather Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    color: #837E9F;
+}
+
+.my_projects p {
+    font-family: 'Merriweather Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #837E9F;
+}
+
+.projects {
+    width: 100%;
+    height: 186px;
+    display: flex;
+    flex-direction: row;
+    align-content: space-around;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.projects_project1 {
+    width: 38%;
+    height: 186px;
+    background: #302F3D;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.projects_project1_title {
+    font-family: 'Merriweather Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    color: #837E9F;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 10px;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+.projects_project1_p {
+    font-family: 'Merriweather Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #837E9F;
+    padding: 0 20px;
+}
+
+.projects_project1_lp {
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+.projects_project1_lp_gh {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 5px;
+    color: #837E9F;
+    padding: 0 5px;
+}
+
+.projects_project1_lp_gh img {
+    width: 35px;
+    padding-left: 15px;
+}
+
+.projects_project1_lp_gh p {
+    font-size: 15px;
+}
+
+.projects_project1_lp_js {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    padding: 0 20px;
+}
+
+.projects_project1_lp_js p {
+    font-family: 'Merriweather Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: #837E9F;
+}
+
+.projects_project2 {
+    width: 38%;
+    height: 186px;
+    background: #302F3D;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.projects_project2_title {
+    font-family: 'Merriweather Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    color: #837E9F;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 10px;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+.projects_project2_p {
+    font-family: 'Merriweather Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #837E9F;
+    padding: 0 20px;
+}
+
+.projects_project2_lp {
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+.projects_project2_lp_gh {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 5px;
+    color: #837E9F;
+    padding: 0 5px;
+}
+
+.projects_project2_lp_gh img {
+    width: 35px;
+    padding-left: 15px;
+}
+
+.projects_project2_lp_gh p {
+    font-size: 15px;
+}
+
+.projects_project2_lp_js {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    padding: 0 20px;
+}
+
+.projects_project2_lp_js p {
+    font-family: 'Merriweather Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: #837E9F;
+}
+
+.postss_recent {
+    width: 85%;
+    height: 86px;
+    background: #302F3D;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+}
+
+.postss_recent h3 {
+    font-family: 'Merriweather Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    color: #837E9F;
+    padding: 30px;
+}
+
+.post {
+    width: 85%;
+    height: 201px;
+    background: #302F3D;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.post_bloco {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.post_bloco_linha1 h4 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+    color: #837E9F;
+}
+
+.post_bloco_linha1 p {
+    font-family: 'Merriweather Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #837E9F;
+    padding: 7px;
+}
+
+.post_bloco_linha2 h4 {
+    font-family: 'Merriweather Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #837E9F;
+}
+
+.post_bloco_linha2 p {
+    font-family: 'Merriweather Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #837E9F;
+    padding: 7px;
+}
